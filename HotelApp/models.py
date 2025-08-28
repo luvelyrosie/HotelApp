@@ -10,7 +10,7 @@ class Hotel(Base):
     name=Column(String, unique=True, index=True)
     location=Column(String)
     
-    rooms=relationship("Room", back_populates="hotel")
+    rooms=relationship("Rooms", back_populates="hotel")
     
 
 class Rooms(Base):
