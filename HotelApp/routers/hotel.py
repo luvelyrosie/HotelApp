@@ -20,6 +20,6 @@ def get_db():
 db_dependency=Annotated[Session, Depends(get_db)]
 
 @router.get("/", status_code=status.HTTP_200_OK)
-async def read_all_hotels(db: db_dependency):
+async def read_hotel(db: db_dependency):
     hotel_model=db.query(Hotel).all()
     return hotel_model
