@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends
 from .database import engine, SessionLocal
 from .models import Base
-from .routers import hotels
+from .routers import hotel
 
 app=FastAPI()
 
@@ -19,4 +19,4 @@ def get_db():
 def home():
     return {"message": "Welcome to Hotel Booking API!"}
 
-app.include_router(hotels.router)
+app.include_router(hotel.router)

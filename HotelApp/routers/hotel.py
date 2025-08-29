@@ -6,8 +6,8 @@ from ..models import Hotel
 
 
 router=APIRouter(
-    prefix="/hotels",
-    tags=["Hotels"]
+    prefix="/hotel",
+    tags=["Hotel"]
 )
 
 def get_db():
