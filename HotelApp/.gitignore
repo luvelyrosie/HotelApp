@@ -1,0 +1,37 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Database / SQLite (if any)
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Alembic / migration files (optional, if you want to ignore local DB migrations)
+# alembic/versions/
+
+# Python egg / package files
+*.egg
+*.egg-info/
+dist/
+build/
